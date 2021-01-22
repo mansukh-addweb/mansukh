@@ -1,0 +1,82 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var \Magento\Newsletter\Block\Subscribe $block */
+
+?>
+<div class="block newsletter" tabindex="0" aria-label="<?= $block->escapeHtml(__('Newsletter form')) ?>">
+    <div class="title">
+		<p><?= $block->escapeHtml(__('Newsletter')) ?></p>
+	</div>
+
+	<h3>
+		<?= $block->escapeHtml(__('Turn your email into an art gallery')) ?>
+	</h3>
+
+	<p class="">
+		<?= $block->escapeHtml(__('Be the first to know our porcelain figures and stay informed of Lladró news.')) ?>
+	</p>
+
+    <div class="content">
+        <form class="form subscribe"
+            novalidate
+            action="<?= $block->escapeUrl($block->getFormActionUrl()) ?>"
+            method="post"
+            data-mage-init='{"validation": {"errorClass": "mage-error"}}'
+            id="newsletter-validate-detail">
+            <div class="field newsletter">
+                <div class="control">
+                    <input name="email" type="email" id="newsletter"
+                                placeholder="<?= $block->escapeHtmlAttr(__('Your email address')) ?>"
+                                data-validate="{required:true, 'validate-email':true}"
+                                title="<?= $block->escapeHtmlAttr(__('Your email address')) ?>" />
+                </div>
+
+				<?= $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('privacy_policy_subscribe_newsletter')->toHtml(); ?>
+            </div>
+            
+            <div class="actions" style="display: none;">
+                <button class="action subscribe primary" title="<?= $block->escapeHtmlAttr(__('Subscribe')) ?>" type="submit">
+                    <span><?= $block->escapeHtml(__('Subscribe')) ?></span>
+                </button>
+            </div>
+            <button class="action subscribe primary" style="width: 290px;height: 39px;font-weight: 300;text-transform: uppercase;padding: 0 15px;"><span><?= $block->escapeHtml(__('Subscribe')) ?></span></button>            
+                </form>
+
+     
+		<div class="footer_text_content">
+			<p><?= $block->escapeHtml(__('Lladró porcelain figures and creative decoration proposals')) ?></p>
+			<?= $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('home_free_shipping_message')->toHtml(); ?>
+		</div>
+    </div>
+</div>
+
+
+
+     
+        <div class="footer_text_content">
+            <p><?= $block->escapeHtml(__('Lladró porcelain figures and creative decoration proposals')) ?></p>
+            <?= $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('home_free_shipping_message')->toHtml(); ?>
+        </div>
+    </div>
+<script>
+    require(['jquery'], function($) {
+     
+//         $('.action.subscribe.primary').click(function(e) {
+           
+//            $('body,html').animate({scrollTop: $(".justify-content-center").offset().top});
+//             //return false;
+            
+
+// });
+//         $("form").submit(function(e) {
+//           event.preventDefault();
+//        });
+   
+    });
+</script>
