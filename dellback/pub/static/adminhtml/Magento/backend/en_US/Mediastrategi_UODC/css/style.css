@@ -1,0 +1,76 @@
+#msuodc_test section {
+  margin-bottom: 40px;
+}
+#msuodc_test .arguments textarea {
+  background-color: #fff;
+  border: 1px solid #adadad;
+  padding: 20px;
+  color: #ef672f;
+  font-family: Consolas, Monaco, Menlo, Fixedsys, monospace;
+  min-height: 100px;
+  font-size: 12px;
+  width: 100%;
+}
+#msuodc_test .log pre {
+  height: 200px;
+  overflow: auto;
+  border: 1px #ccc solid;
+  padding: 10px;
+  font-size: 12px;
+}
+#msuodc_test .options table {
+  width: 100%;
+  line-height: 1.5;
+  font-size: 12px;
+}
+#msuodc_test .options table th {
+  text-align: left;
+  border-bottom: 1px #ccc solid;
+}
+#msuodc_automation pre {
+  height: 200px;
+  overflow: auto;
+  border: 1px #ccc solid;
+  padding: 10px;
+  font-size: 12px;
+}
+#msuodc-information-admintml-order-view ul {
+  list-style: disc inside none;
+  margin: 20px 0;
+  padding: 0;
+}
+#msuodc-information-admintml-order-view ul li {
+  border: 1px transparent solid;
+  margin: 0;
+  padding: 0 10px;
+}
+#msuodc-information-admintml-order-view ul li a {
+  line-height: 2;
+  margin: 0;
+  padding: 0;
+}
+#msuodc-information-admintml-order-view ul li.selected {
+  border-color: #ccc;
+}
+#msuodc-information-admintml-order-view ul ul {
+  margin: 0;
+  padding-left: 15px;
+}
+#msuodc-information-admintml-order-view dl {
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+#msuodc-information-admintml-order-view dl dd {
+  margin: 0;
+  overflow: hidden;
+}
+#msuodc-information-admintml-order-view dl dt {
+  clear: both;
+  float: left;
+  font-weight: bold;
+  width: 200px;
+}
+#msuodc-information-admintml-order-view.is-loading .change-shipping-method .admin__page-section-item-content {
+  background: transparent url('../images/ajax-loader.gif') bottom right no-repeat scroll;
+}

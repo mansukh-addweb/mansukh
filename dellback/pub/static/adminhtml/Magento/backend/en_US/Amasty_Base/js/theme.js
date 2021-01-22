@@ -1,0 +1,1 @@
+/var/www/html/web/dellback/app/code/Amasty/Base/view/adminhtml/web/js/theme.js
